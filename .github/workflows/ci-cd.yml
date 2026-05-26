@@ -36,17 +36,17 @@ jobs:
     - name: Docker Login
       uses: docker/login-action@v2
       with:
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+        username: diptidhande46667
+        password: dckr_pat_drfqqZVuMP1qUHt-dy6Jhwxixlw 
 
     - name: Build Frontend Docker Image
-      run: docker build -t your-dockerhub/frontend:latest ./frontend
+      run: docker build -t diptidhande46667/frontend:latest ./frontend
 
     - name: Build Backend Docker Image
-      run: docker build -t your-dockerhub/backend:latest ./backend
+      run: docker build -t diptidhande46667/backend:latest ./backend
 
     - name: Push Frontend Image
-      run: docker push your-dockerhub/frontend:latest
+      run: docker push diptidhande46667/frontend:latest
 
     - name: Push Backend Image
-      run: docker push your-dockerhub/backend:latest
+      run: docker push diptidhande46667/backend:latest
